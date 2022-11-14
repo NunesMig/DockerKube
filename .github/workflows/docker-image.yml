@@ -24,4 +24,4 @@ jobs:
       run: docker build . --file Dockerfile --tag NunesMig/DockerKube:$(date +%s)
       
       -name: Docker Push
-       run: docker push ${{secrets.DOCKER:USER}}/teste12
+       run: docker push ${{secrets.DOCKER_USER}}/teste12
